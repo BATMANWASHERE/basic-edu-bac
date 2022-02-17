@@ -118,6 +118,9 @@ while ($row = mysqli_fetch_array($get_stud)) {
     $pdf->Cell(20, 5, '', 0, 0);
     $pdf->Cell(18, 4, 'STRAND: ', 0, 0);
     $pdf->Cell(35, 4, $row['strand_name'], 'B', 0, 'C');
+    $pdf->Cell(13, 5, '', 0, 0);
+    $pdf->Cell(25, 4, 'STUDENT NO.: ', 0, 0);
+    $pdf->Cell(40, 4, $row['stud_no'], 'B', 0, 'C');
     $pdf->Cell(8, 4, '', 0, 1);
 
     $pdf->Ln(2.5);
@@ -750,6 +753,9 @@ while ($row = mysqli_fetch_array($get_stud)) {
     $pdf->Cell(20, 5, '', 0, 0);
     $pdf->Cell(18, 4, 'STRAND: ', 0, 0);
     $pdf->Cell(35, 4, $row['strand_name'], 'B', 0, 'C');
+    $pdf->Cell(13, 5, '', 0, 0);
+    $pdf->Cell(25, 4, 'STUDENT NO.: ', 0, 0);
+    $pdf->Cell(40, 4, $row['stud_no'], 'B', 0, 'C');
     $pdf->Cell(8, 4, '', 0, 1);
 
     $pdf->Ln(2.5);
@@ -1122,6 +1128,9 @@ while ($row = mysqli_fetch_array($get_stud)) {
     $pdf->Cell(15, 5, '', 0, 0);
     $pdf->Cell(17, 4, 'STRAND: ', 0, 0);
     $pdf->Cell(35, 4, $row['strand_name'], 'B', 0, 'C');
+    $pdf->Cell(13, 5, '', 0, 0);
+    $pdf->Cell(25, 4, 'STUDENT NO.: ', 0, 0);
+    $pdf->Cell(40, 4, $row['stud_no'], 'B', 0, 'C');
     $pdf->Cell(10, 5, '', 0, 1);
 
     $pdf->Ln(.5);
